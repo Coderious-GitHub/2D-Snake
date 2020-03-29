@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
+
 public class GlobalVariables : MonoBehaviour
 {
     public static GlobalVariables instance;

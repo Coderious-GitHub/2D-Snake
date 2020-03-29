@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Menu")
             AudioManager.instance.Play("Theme");
 
+        Load();
+
         width = 24;
         height = 18;
         isGameOver = false;
@@ -104,6 +106,7 @@ public class GameManager : MonoBehaviour
             GlobalVariables.instance.difficultyFactor);
         isGameOver = true;
         gameOverUI.SetActive(true);
+        Save();
     }
 
     public void Restart()
@@ -111,5 +114,24 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void Save()
+    {
+        SaveSystem.SaveHighScore();
+    }
 
+    public void Load()
+    {
+        HighScore highScore = SaveSystem.LoadHighScore();
+        
+        if(highScore != null)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                GlobalVariables.instance.highScore[i, 0] = highScore.playerNames[i];
+                GlobalVariables.instance.highScore[i, 1] = highScore.scores[i];
+                GlobalVariables.instance.highScore[i, 2] = highScore.turns[i];
+                GlobalVariables.instance.highScore[i, 3] = highScore.difficulties[i];
+            }
+        }
+    }
 }

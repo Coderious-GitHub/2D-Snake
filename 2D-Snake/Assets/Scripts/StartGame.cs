@@ -6,8 +6,6 @@ public class StartGame : MonoBehaviour
 {
     public Dropdown difficulty;
     public InputField playerName;
-    public PlayerManager player;
-    public GameManager gameManager;
 
     public void Begin()
     {
