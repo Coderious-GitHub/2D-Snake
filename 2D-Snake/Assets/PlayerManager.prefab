@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7190409175507274854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7190409175507274840}
+  - component: {fileID: 7190409175507274855}
+  m_Layer: 0
+  m_Name: PlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7190409175507274840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7190409175507274854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.390259, y: -10.842486, z: -29.297264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7190409175507274855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7190409175507274854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5509c910416233342a43414078972301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  map: {fileID: 0}
+  playerName: 
+  score: 0
+  turn: 0
+  difficulty: 
+  headLeft: {fileID: 11400000, guid: b895b33a4ce3e7d48801a23a7253a656, type: 2}
+  headRight: {fileID: 11400000, guid: 40b54fba2325e404185561b121e9116e, type: 2}
+  headUp: {fileID: 11400000, guid: 53fc34f741f424b449a88374957ccbd3, type: 2}
+  headDown: {fileID: 11400000, guid: 38f629c1d11181e4a8fe707529ed697d, type: 2}
+  bodyHoriz: {fileID: 11400000, guid: 695c681329d5d154a8ee1e0749752d29, type: 2}
+  bodyVert: {fileID: 11400000, guid: 85bffec5c7d76924cb6fea9f3b31fe15, type: 2}
+  leftToBottom: {fileID: 11400000, guid: 35a048af62b69f141b5baa3fb8509fe4, type: 2}
+  leftToTop: {fileID: 11400000, guid: 30291f70472550c4e9bfd12304a5dbf2, type: 2}
+  rightToBottom: {fileID: 11400000, guid: 1abd7975573fafc499a1cfff49c63787, type: 2}
+  rightToTop: {fileID: 11400000, guid: e8ac480d38be8db4abb49223560c2fb9, type: 2}

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 5509c910416233342a43414078972301
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameManager: {instanceID: 0}
+  - map: {instanceID: 0}
+  - DropDown: {instanceID: 0}
+  - headLeft: {instanceID: 0}
+  - headRight: {instanceID: 0}
+  - headUp: {instanceID: 0}
+  - headDown: {instanceID: 0}
+  - bodyHoriz: {instanceID: 0}
+  - bodyVert: {instanceID: 0}
+  - leftToBottom: {instanceID: 0}
+  - leftToTop: {instanceID: 0}
+  - rightToBottom: {instanceID: 0}
+  - rightToTop: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
